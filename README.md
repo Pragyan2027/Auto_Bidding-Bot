@@ -108,49 +108,7 @@ The workflow can be configured to:
 
 # Architecture Flow
 
-```text
-                 +----------------+
-                 |      n8n       |
-                 | Workflow Trigger|
-                 +--------+-------+
-                          |
-                          v
-               +-------------------+
-               | Python Automation |
-               |  (Playwright)     |
-               +---------+---------+
-                         |
-        +----------------+----------------+
-        |                                 |
-        v                                 v
-+---------------+               +----------------+
-|   LinkedIn    |               |   X/Twitter    |
-| Post Search   |               | Tweet Search   |
-+-------+-------+               +--------+-------+
-        |                                |
-        v                                v
-+-----------------------------------------------+
-|        Extract Post/Tweet Content             |
-+-------------------+---------------------------+
-                    |
-                    v
-          +---------------------+
-          |  Groq AI Generation |
-          +----------+----------+
-                     |
-                     v
-          +---------------------+
-          | Deduplication Check |
-          | (CSV Storage)       |
-          +----------+----------+
-                     |
-                     v
-          +---------------------+
-          | Generated Replies   |
-          | (Dry Run Mode)      |
-          +---------------------+
-```
-
+![Server](work.jpg)
 ---
 
 # Tech Stack
