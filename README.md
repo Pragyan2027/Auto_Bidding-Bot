@@ -125,21 +125,6 @@ The workflow can be configured to:
 
 ---
 
-# Folder Structure
-
-```text
-Auto-Bidding-Bot/
-│
-├── ai_comment_generator.py
-├── linkedin_scraper.py
-├── twitter_ai_bot.py
-├── processed_posts.csv
-├── README.md
-└── screenshots/
-```
-
----
-
 # Installation
 
 ## Clone Repository
